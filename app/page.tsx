@@ -193,12 +193,12 @@ export default function MarketInsightsPage() {
               </div>
 
               <div className="relative flex-shrink-0">
-                <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-gray-700 shadow-xl">
+                <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-gray-700 shadow-xl">
                   <Image
                     src="/images/live-market-data.png"
                     alt="Live Market Data - Real-time Agricultural Insights"
                     fill
-                    className="object-cover"
+                    className="object-cover object-[60%_center]"
                   />
                 </div>
               </div>
@@ -263,8 +263,8 @@ export default function MarketInsightsPage() {
                       />
                     </svg>
                   </div>
-                  <h3 className="text-xl font-bold mb-2 text-white">Vegetable Index</h3>
-                  <p className="text-gray-300">Monitor shifts in demand & supply</p>
+                  <h3 className="text-xl font-bold mb-2 text-white">Sheep Prices</h3>
+                  <p className="text-gray-300">Track weekly sheep market trends</p>
                 </CardContent>
               </Card>
 
@@ -308,17 +308,14 @@ export default function MarketInsightsPage() {
                     </div>
                   </div>
                   <div className="aspect-video relative rounded-lg overflow-hidden bg-gray-700">
-                    <Image
-                      src="/placeholder.svg?height=300&width=400"
-                      alt="AMT Report Screenshot"
-                      fill
-                      className="object-cover"
+                    <iframe
+                      className="w-full h-full"
+                      src="https://www.youtube.com/embed/zCXG1Gy6U1U?si=T1r1HUHhBsPI2w_m"
+                      title="YouTube video player"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
                     />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="bg-[#DC2626]/90 rounded-full p-4 cursor-pointer hover:scale-110 transition-transform">
-                        <Play className="h-8 w-8 text-white" />
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
@@ -364,7 +361,7 @@ export default function MarketInsightsPage() {
                     value="vegetables"
                     className={`text-lg ${activeTab === "vegetables" ? "text-white" : ""}`}
                   >
-                    Vegetables
+                    Sheep
                   </TabsTrigger>
                 </TabsList>
 
@@ -515,7 +512,7 @@ export default function MarketInsightsPage() {
 
                 <TabsContent value="vegetables" className="space-y-4">
                   <div className="bg-gray-800/70 backdrop-blur-sm p-6 rounded-lg shadow border border-gray-600">
-                    <h3 className="text-xl font-bold mb-4 text-white">Weekly Vegetable Price Index</h3>
+                    <h3 className="text-xl font-bold mb-4 text-white">Weekly Sheep Price Index</h3>
                     <div className="aspect-[2/1] relative mb-4 bg-gray-700/50 rounded-lg p-4">
                       <svg className="w-full h-full" viewBox="0 0 800 400">
                         <path
@@ -561,23 +558,23 @@ export default function MarketInsightsPage() {
                     </div>
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       <div className="bg-[#2876BC]/20 p-4 rounded-lg border border-gray-600">
-                        <p className="text-sm text-gray-400">Potatoes</p>
-                        <p className="text-xl font-bold text-white">R85.50/10kg</p>
+                        <p className="text-sm text-gray-400">Merino</p>
+                        <p className="text-xl font-bold text-white">R2,850/head</p>
                         <p className="text-sm text-green-400">+3.2%</p>
                       </div>
                       <div className="bg-[#2876BC]/20 p-4 rounded-lg border border-gray-600">
-                        <p className="text-sm text-gray-400">Onions</p>
-                        <p className="text-xl font-bold text-white">R65.20/10kg</p>
+                        <p className="text-sm text-gray-400">Dorper</p>
+                        <p className="text-xl font-bold text-white">R3,120/head</p>
                         <p className="text-sm text-red-400">-2.5%</p>
                       </div>
                       <div className="bg-[#2876BC]/20 p-4 rounded-lg border border-gray-600">
-                        <p className="text-sm text-gray-400">Tomatoes</p>
-                        <p className="text-xl font-bold text-white">R120.40/box</p>
+                        <p className="text-sm text-gray-400">Dohne</p>
+                        <p className="text-xl font-bold text-white">R2,940/head</p>
                         <p className="text-sm text-green-400">+8.3%</p>
                       </div>
                       <div className="bg-[#2876BC]/20 p-4 rounded-lg border border-gray-600">
-                        <p className="text-sm text-gray-400">Cabbage</p>
-                        <p className="text-xl font-bold text-white">R45.60/bag</p>
+                        <p className="text-sm text-gray-400">Auction Volume</p>
+                        <p className="text-xl font-bold text-white">8,450</p>
                         <p className="text-sm text-red-400">-1.8%</p>
                       </div>
                     </div>
@@ -707,41 +704,41 @@ export default function MarketInsightsPage() {
                       </svg>
                       Basic access to Digikraal
                     </li>
-                    <li className="flex items-center text-gray-500">
+                    <li className="flex items-center text-gray-300">
                       <svg
-                        className="w-5 h-5 mr-2"
+                        className="w-5 h-5 text-green-500 mr-2"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      No AMT reports
+                      AMT weekly price reports
                     </li>
-                    <li className="flex items-center text-gray-500">
+                    <li className="flex items-center text-gray-300">
                       <svg
-                        className="w-5 h-5 mr-2"
+                        className="w-5 h-5 text-green-500 mr-2"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      No price charts
+                      3 listings per month
                     </li>
-                    <li className="flex items-center text-gray-500">
+                    <li className="flex items-center text-gray-300">
                       <svg
-                        className="w-5 h-5 mr-2"
+                        className="w-5 h-5 text-green-500 mr-2"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      No video analysis
+                      Basic verification
                     </li>
                   </ul>
                   <Button
@@ -759,9 +756,9 @@ export default function MarketInsightsPage() {
                 </div>
                 <CardContent className="p-6 border-t-4 border-[#2876BC]">
                   <div className="text-center mb-6">
-                    <h3 className="text-xl font-bold mb-2 text-white">Market Watcher</h3>
+                    <h3 className="text-xl font-bold mb-2 text-white">Ram Plan</h3>
                     <div className="text-3xl font-bold text-white">
-                      R149<span className="text-lg font-normal text-gray-400">/mo</span>
+                      R99<span className="text-lg font-normal text-gray-400">/mo</span>
                     </div>
                   </div>
                   <ul className="space-y-3 mb-8">
@@ -799,19 +796,19 @@ export default function MarketInsightsPage() {
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      Interactive price charts
+                      3 listings per month
                     </li>
-                    <li className="flex items-center text-gray-500">
+                    <li className="flex items-center text-gray-300">
                       <svg
-                        className="w-5 h-5 mr-2"
+                        className="w-5 h-5 text-green-500 mr-2"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      No video analysis
+                      Basic verification
                     </li>
                   </ul>
                   <Button className="w-full bg-[#2876BC] hover:bg-[#2876BC]/90 text-white uppercase font-bold shadow-md transition-transform hover:scale-105">
@@ -823,9 +820,9 @@ export default function MarketInsightsPage() {
               <Card className="border-gray-700 shadow-lg bg-gray-800/70 backdrop-blur-sm">
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
-                    <h3 className="text-xl font-bold mb-2 text-white">Pro Trader</h3>
+                    <h3 className="text-xl font-bold mb-2 text-white">Bull Plan</h3>
                     <div className="text-3xl font-bold text-white">
-                      R249<span className="text-lg font-normal text-gray-400">/mo</span>
+                      R299<span className="text-lg font-normal text-gray-400">/mo</span>
                     </div>
                   </div>
                   <ul className="space-y-3 mb-8">
@@ -851,7 +848,7 @@ export default function MarketInsightsPage() {
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      Full AMT reports
+                      Full AMT reports & analysis
                     </li>
                     <li className="flex items-center text-gray-300">
                       <svg
@@ -863,7 +860,7 @@ export default function MarketInsightsPage() {
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      Video analysis
+                      Unlimited listings
                     </li>
                     <li className="flex items-center text-gray-300">
                       <svg
@@ -875,7 +872,7 @@ export default function MarketInsightsPage() {
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                       </svg>
-                      Future forecasting alerts
+                      Full verification & priority support
                     </li>
                   </ul>
                   <Button className="w-full bg-[#FF8410] hover:bg-[#FF8410]/90 text-white uppercase font-bold shadow-md transition-transform hover:scale-105">
