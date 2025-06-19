@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import PowerBIEmbed from "@/components/PowerBIEmbed"
 
 // Artistic Background Component
 const ArtisticBackground = () => (
@@ -368,49 +369,7 @@ export default function MarketInsightsPage() {
                 <TabsContent value="livestock" className="space-y-4">
                   <div className="bg-gray-800/70 backdrop-blur-sm p-6 rounded-lg shadow border border-gray-600">
                     <h3 className="text-xl font-bold mb-4 text-white">Weekly Livestock Price Index</h3>
-                    <div className="aspect-[2/1] relative mb-4 bg-gray-700/50 rounded-lg p-4">
-                      <svg className="w-full h-full" viewBox="0 0 800 400">
-                        <path
-                          d="M50,350 L150,280 L250,300 L350,220 L450,250 L550,180 L650,200 L750,150"
-                          fill="none"
-                          stroke="#2876BC"
-                          strokeWidth="3"
-                        />
-                        <circle cx="150" cy="280" r="5" fill="#2876BC" />
-                        <circle cx="250" cy="300" r="5" fill="#2876BC" />
-                        <circle cx="350" cy="220" r="5" fill="#2876BC" />
-                        <circle cx="450" cy="250" r="5" fill="#2876BC" />
-                        <circle cx="550" cy="180" r="5" fill="#2876BC" />
-                        <circle cx="650" cy="200" r="5" fill="#2876BC" />
-                        <circle cx="750" cy="150" r="5" fill="#2876BC" />
-
-                        <line x1="50" y1="350" x2="750" y2="350" stroke="#4B5563" strokeWidth="1" />
-                        <text x="50" y="370" fontSize="12" fill="#9CA3AF">
-                          Jan
-                        </text>
-                        <text x="150" y="370" fontSize="12" fill="#9CA3AF">
-                          Feb
-                        </text>
-                        <text x="250" y="370" fontSize="12" fill="#9CA3AF">
-                          Mar
-                        </text>
-                        <text x="350" y="370" fontSize="12" fill="#9CA3AF">
-                          Apr
-                        </text>
-                        <text x="450" y="370" fontSize="12" fill="#9CA3AF">
-                          May
-                        </text>
-                        <text x="550" y="370" fontSize="12" fill="#9CA3AF">
-                          Jun
-                        </text>
-                        <text x="650" y="370" fontSize="12" fill="#9CA3AF">
-                          Jul
-                        </text>
-                        <text x="750" y="370" fontSize="12" fill="#9CA3AF">
-                          Aug
-                        </text>
-                      </svg>
-                    </div>
+                    <PowerBIEmbed />
                     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                       <div className="bg-[#2876BC]/20 p-4 rounded-lg border border-gray-600">
                         <p className="text-sm text-gray-400">Beef Average</p>

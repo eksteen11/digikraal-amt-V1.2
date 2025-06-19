@@ -1,0 +1,20 @@
+Livestock Prices
+Item,Value,Change
+Beef Average,R38.50/kg,+2.4%
+Lamb Average,R85.20/kg,-1.2%
+Goat Average,R72.40/kg,+0.8%
+Auction Volume,12,450,+5.3%
+
+Grain Prices
+Item,Value,Change
+White Maize,R3,250/ton,+1.8%
+Yellow Maize,R3,180/ton,+2.1%
+Wheat,R4,850/ton,-0.5%
+Soybean,R7,120/ton,-1.2%
+
+Sheep Prices
+Item,Value,Change
+Merino,R2,850/head,+3.2%
+Dorper,R3,120/head,-2.5%
+Dohne,R2,940/head,+8.3%
+Auction Volume,8,450,-1.8% 
